@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <section id="container" class="flex justify-center gap-8 py-24">
+       <div class="flex flex-col py-24">  
+            <h1>My timer</h1>
+            <p id="relogio">00:00:00</p>
+        </div>
+      
+
+        <div class="flex gap-8">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
